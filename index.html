@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MR Frontend Developer Technical Test</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="full-width-header">
+            <div class="container">
+                <div class="my-cart">My Cart <span id="cart-count"></span>
+                    <div class="minicart">
+                        <div id="small" class="minicart-item">
+                            <div class="minicart-image">
+                                <img class="image"src="" alt="">
+                            </div>
+                            <div class="minicart-details">
+                                <div class="minicart-title">
+                                </div>
+                                <div class="quantity-price">
+                                    <div id="small-quantity"></div>
+                                    <div class="minicart-price"></div>
+                                </div>
+                                <div class="minicart-size">Size: <span id="minicart-size-small"></span></div>
+                            </div>
+                        </div>
+                        <div id="med" class="minicart-item">
+                            <div class="minicart-image">
+                                <img class="image" src="" alt="">
+                            </div>
+                            <div class="minicart-details">
+                                <div class="minicart-title">
+                                </div>
+                                <div class="quantity-price">
+                                    <div id="med-quantity"></div>
+                                    <div class="minicart-price"></div>
+                                </div>
+                                <div class="minicart-size">Size <span id="minicart-size-med"></span></div>
+                            </div>
+                        </div>
+                        <div id="large" class="minicart-item">
+                            <div class="minicart-image">
+                                <img class="image" src="" alt="">
+                            </div>
+                            <div class="minicart-details">
+                                <div class="minicart-title">
+                                </div>
+                                <div class="quantity-price">
+                                    <div id="large-quantity"></div>
+                                    <div class="minicart-price"></div>
+                                </div>
+                                <div class="minicart-size">Size <span id="minicart-size-large"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="product">
+        <div class="container">
+            <div class="product-image">
+                <img class="image" src="" alt="">
+            </div>
+            <div class="product-detail">
+                <div class="product-title">
+                    <h4 id="title"></h4>
+                </div>
+                <div id="price" class="price"></div>
+                <div class="product-description">
+                    <p id="description"></p>
+                </div>
+                <div class="size-block">
+                    <p>size<span>* </span><span class="size-selected"></span></p>
+                    <div class="sizes">
+                        <div id="size-s" class="size"></div>
+                        <div id="size-m" class="size"></div>
+                        <div id="size-l" class="size"></div>
+                    </div>
+                </div>
+                <div class="atc">
+                    <button class="atc-btn">Add To Cart</button>
+                    <p class="error">*Please select a size</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="script.js"></script>
+</html>

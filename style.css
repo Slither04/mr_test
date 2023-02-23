@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.focus {
+    border: 1px #222 solid !important;
+}
+
+.full-width-header {
+    background-color: #F6F6F7;
+}
+
+.full-width-header .container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.my-cart {
+    color: #222;
+    font-size: 12px;
+    padding: 8px;
+    position: relative;
+}
+
+.my-cart:hover {
+    cursor: default;
+}
+
+.my-cart.ready:hover{
+    background-color: #fff;
+    border: 1px #888 solid;
+    border-top: none;
+    cursor: pointer;
+}
+
+.my-cart.ready:hover .minicart {
+    display: flex;
+}
+.minicart::before {
+    content: '';
+    height: 5px;
+    width: 75px;
+    background-color: white;
+    position: absolute;
+    top: -2px;
+    right: 0;
+}
+.minicart {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 34px;
+    right: -1px;
+    padding: 20px;
+    padding-bottom: 0;
+    border: 1px #888 solid;
+    background-color: #FFF;
+}
+
+#small, #med, #large {
+    display: none;
+}
+
+.minicart-item {
+    display: flex;
+    padding-bottom: 20px;
+}
+.minicart-item:last-child {
+    margin-bottom: 0;
+}
+
+.minicart-image {
+    padding-right: 15px;
+}
+
+.minicart-image img {
+    width: 65px;
+}
+
+.minicart-details {
+    width: 165px;
+    color: #222;
+}
+
+.minicart-details .minicart-title {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.minicart-details .quantity-price {
+    display: flex;
+}
+
+.minicart-details .minicart-price {
+    padding-left: 5px;
+    font-weight: 500;
+}
+
+.minicart-details .minicart-price span {
+    font-weight: 300;
+}
+
+.minicart-details .minicart-size {
+    padding-top: 10px;
+}
+
+.product {
+    margin-top: 32px;
+}
+
+.product .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product .product-image{
+    width: 44%;
+}
+
+.product .product-image img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.product .product-detail {
+    width: 56%;
+    padding-left: 150px;
+}
+
+.product .product-detail .product-title h4 {
+    color: #222;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 0;
+    padding-bottom: 15px;
+    border-bottom: 1px #f5f5f5 solid;
+}
+
+.product .product-detail .price {
+    color: #222;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px #f5f5f5 solid;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.product .product-detail .product-description p {
+    color: #888;
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 300;
+    margin-bottom: 0;
+    padding-top: 15px;
+}
+
+.size-block {
+    margin-top: 32px;
+}
+
+.size-block p {
+    color: #888;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.size-block p span {
+    color: #C90000;
+}
+
+.size-block p span.size-selected {
+    color: #222;
+    font-weight: 500;
+}
+
+.size-block .sizes {
+    display: flex;
+}
+
+.size-block .sizes .size {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #888;
+    font-size: 11px;
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    border: 1px #ccc solid;
+}
+
+.size-block .sizes .size:hover {
+    cursor: pointer;
+}
+
+.atc {
+    margin-top: 24px;
+}
+
+.atc .atc-btn {
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #222;
+    border: 2px #222 solid;
+    padding: 5px 20px;
+    background-color: transparent;
+    outline: none;
+}
+
+.atc .atc-btn:hover {
+    background-color: #222;
+    color: #fff;
+    transition: ease all 0.2s;
+}
+
+.atc .error {
+    display: none;
+    color: #C90000;
+    font-size: 11px;
+    padding-top: 5px;
+    margin-bottom: 0;
+}
+@media (max-width: 768px) {
+    .product .product-detail {
+        padding-left: 30px;
+    }
+}
+@media (max-width: 480px) {
+    .my-cart {
+        position: static;
+    }
+
+    .minicart {
+        left: 15px;
+        right: 15px;
+    }
+
+    .product .product-image {
+        width: 100%;
+    }
+
+    .product .product-detail {
+        width: 100%;
+        padding-left: 0;
+        padding-top: 32px;
+    }
+}
